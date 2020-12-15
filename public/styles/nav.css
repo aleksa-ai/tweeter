@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
+#title {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 50%;
+  padding-left: 1.5em;
+  padding-bottom: 0.4em;
+  font-family: 'Bungee', sans-serif;
+  font-size: 50px;
+}
+
+#sub-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+  padding-right: 3em;
+  font-size: 30px;
+}
