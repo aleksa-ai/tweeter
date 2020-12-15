@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/green-dust-and-scratches.png");
+  background-color: orange;
+  padding-top: 0.5em;
+}
+
+header > div > h2 {
+  font-size: 46px;
+  margin-block-start: 0.1em;
+  color: white;
+}
