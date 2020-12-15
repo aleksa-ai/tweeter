@@ -14,3 +14,7 @@ header > div > h2 {
   margin-block-start: 0.1em;
   color: white;
 }
+
+header > div > h2 > span {
+  font-weight:500;
+}
