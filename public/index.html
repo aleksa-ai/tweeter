@@ -45,6 +45,17 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form Content-Type="application/x-www-form-urlencoded" action="/tweets/" method="POST">
+          <!-- <label for="tweet-text"></label> -->
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam non voluptatum. Aperiam accusamus consequatur vitae nihil suscipit repellat dolorem voluptate laudantium iste provident ullam itaque enim eveniet consectetur, quas cumque molestiae maiores vero est laborum ad cupiditate sunt! Atque.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, alias perferendis? Ipsa ex ab, incidunt, corporis at in ad accusamus distinctio, eveniet ullam excepturi quae?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aliquam optio delectus laborum earum sint ex iure maxime, ipsam neque fugiat cupiditate commodi odit, quidem praesentium voluptate totam distinctio. Culpa laudantium delectus autem quasi labore blanditiis, repellat suscipit eum, modi placeat, laborum alias deleniti sequi in vel assumenda nulla saepe neque rem. Ad, veniam dolorum. Molestias quisquam laborum architecto dolorum! Repellat voluptates in eum corporis.</p>
