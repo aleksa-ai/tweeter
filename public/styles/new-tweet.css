@@ -119,3 +119,13 @@ article > footer {
   width: 0.7em;
   height: 0.7em;
 }
+
+
+.tweet-container:hover{
+  box-shadow: 10px 6px 2px 0px #ccc;
+  font-weight: bolder;
+}
+
+.handle:hover {
+  visibility: visible;
+}
