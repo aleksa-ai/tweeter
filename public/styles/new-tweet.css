@@ -35,3 +35,87 @@ output {
 .fontRed{
   color: red;
 }
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: streth;
+  margin-top: 3em;
+  border-style: solid;
+  border-width: 4px;
+}
+
+article > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 1em 0.5em 0.5em;
+}
+
+article > header > div {
+  display: flex;
+  align-items: center;
+}
+
+article > header > div > img {
+  width: 70px;
+  height: 60px;
+}
+
+.handle {
+  color: #a09f9f;
+}
+
+article > p {
+  align-self: center;
+  width: 95%;
+  height: 2.5em;
+  font-weight: 600;
+  padding-left: 1em;
+  border-style: solid;
+  border-width: 0 0 4px 0;
+  margin-bottom: 0;
+}
+
+article > footer {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0.4em 0 1em;
+}
+
+.tweet-age {
+  font-size: smaller;
+  font-weight: 600;
+}
+
+.engagement {
+  display: flex;
+  justify-content: space-between;
+  width: 75px;
+}
+
+.flag {
+  background-image: url("../images/flag-solid.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 0.7em;
+  height: 0.7em;
+}
+
+.retweet {
+  background-image: url("../images/retweet-solid.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 0.7em;
+  height: 0.7em;
+}
+
+.like {
+  background-image: url("../images/heart-solid.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 0.7em;
+  height: 0.7em;
+}
