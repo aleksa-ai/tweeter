@@ -70,7 +70,7 @@ $(document).ready(function() {
   //Prevent submit from redirecting to /tweet  which has no POST & generates a 400 error
   $('#tweet-form').on('submit', function(event) {
     event.preventDefault();
-    console.log($(this).serialize());
+    //console.log($(this).serialize());
 
     $.ajax({
       method: 'POST',
@@ -82,6 +82,14 @@ $(document).ready(function() {
       })
       .catch(error => console.log(error));
 
+      // $.ajax({
+      //   method: 'GET',
+      //   url: '/tweets'
+      // })
+      // .done((data) => {
+      //   renderTweets(data);
+      // })
+      // .fail((error) => console.log(error));
   });
   
   //start the app showing the tweets
