@@ -4,6 +4,14 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
+  //Escapes user input that could be sent to server
+  const escape =  function(str) {
+    let safeHtml = document.createElement('div');
+    safeHtml.appendChild(document.createTextNode(str));
+    return safeHtml.innerHTML;
+  };
+
+
   // Returns object to append to html
   const createTweetElement = function(tweet) {
     const $tweet = $(`
@@ -13,12 +21,12 @@ $(document).ready(function() {
             <div>
               <img src="${tweet.user.avatars}">
             </div>
-            <span>${tweet.user.name}</span>
+            <span>${escape(tweet.user.name)}</span>
           </div>
-          <span class="handle">${tweet.user.handle}</span>
+          <span class="handle">${escape(tweet.user.handle)}</span>
         </header>
         <p>
-          ${tweet.content.text}
+          ${escape(tweet.content.text)}
         </p>
         <footer>
           <span class="tweet-age">${tweet.created_at} days ago</span>
