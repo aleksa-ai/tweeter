@@ -58,11 +58,15 @@ $(document).ready(function() {
     const charLeft = 140 - $("#tweet-form textarea").val().length;
 
     const data = $(this).serialize();
+   
+    const errorMessage = $(this).parent().siblings('#error-message');
 
     if (charLeft === 140) {
-      alert('Your tweet is empty. ');
+      errorMessage.text('Your tweet is empty.')
+      errorMessage.slideDown('fast');
     } else if (charLeft < 0) {
-      alert('Your tweet exceeds the character limit.');
+      errorMessage.text('Your tweet exceeds the character limit.')
+      errorMessage.slideDown('fast');
     } else {
 
       //Send tweets to database
@@ -78,6 +82,17 @@ $(document).ready(function() {
         .catch(error => console.log(error));
     }
     
+  });
+
+  $('#tweet-text').on('input', function(event) {
+    const errorMessage = $(this).parent().parent().siblings('#error-message');
+    const charLeft = 140 - $(this).val().length;
+    console.log(charLeft);
+
+
+    if (charLeft >= 0 && charLeft <= 140 && errorMessage.is(':visible')) {
+      errorMessage.slideUp('fast');
+    }
   });
 
   //Gets tweets from database to be able to display on page
