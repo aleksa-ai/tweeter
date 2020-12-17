@@ -4,20 +4,21 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// Test / driver code (temporary). Eventually will get this from the server.
- const tweetData = {
+// Test / driver code (temporary)
+const tweetData = {
   "user": {
     "name": "Newton",
     "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
-    },
+    "handle": "@SirIsaac"
+  },
   "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
+    "text": "If I have seen further it is by standing on the shoulders of giants"
+  },
   "created_at": 1461116232227
-}
+};
 
-const createTweetElement = function(tweet){
+// Returns object to append to html
+const createTweetElement = function(tweet) {
   const $tweet = $(`
 <article>
   <header>
@@ -42,16 +43,13 @@ const createTweetElement = function(tweet){
   </footer>
 </article>
 `);
-//Return structure to append to html
-return $tweet;
+  return $tweet;
 };
 
 const $tweet = createTweetElement(tweetData);
 
 $(document).ready(function() {
-  $(document).on('dblclick', function (event) {
-    //console.log(createTweetElement(tweetData)[0]); // To print in console
-    //$('#tweets-container').append($tweet); // Template from assignment instructions
-    $('#tweets-container').append(createTweetElement(tweetData)[0]); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  $(document).on('dblclick', function(event) {
+    $('#tweets-container').append(createTweetElement(tweetData)[0]);
   });
 });
