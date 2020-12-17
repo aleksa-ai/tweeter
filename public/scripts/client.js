@@ -18,7 +18,7 @@
 }
 
 const createTweetElement = function(tweet){
-  const $tweet = (`
+  const $tweet = $(`
 <article>
   <header>
     <div>
@@ -46,8 +46,14 @@ const createTweetElement = function(tweet){
 return $tweet;
 };
 
-const tweet = createTweetElement(tweetData);
+const $tweet = createTweetElement(tweetData);
 
-// Test / driver code (temporary)
-console.log(tweet); // to see what it looks like
-//$('#tweets-container').append($tweet);
+$(document).ready(function() {
+  $(document).on('dblclick', function (event) {
+    //console.log(console.log($tweet)); Template from assignment instructions
+    console.log(createTweetElement(tweetData)[0]); // To print in console
+  });
+});
+
+// (temporary)
+//$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
