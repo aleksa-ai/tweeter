@@ -35,6 +35,7 @@ $(document).ready(function() {
 
   //Create tweet element for each tweet & append it to tweets container
   const renderTweets = function(tweets) {
+    //$('#tweets-container').empty();
     tweets.forEach(element => {
       const $newTweet = createTweetElement(element)[0];
       $('#tweets-container').prepend($newTweet);
@@ -47,6 +48,7 @@ $(document).ready(function() {
     event.preventDefault();
     const data = $(this).serialize();
 
+    //Send tweets to database
     $.ajax({
       method: 'POST',
       url: '/tweets',
@@ -59,6 +61,7 @@ $(document).ready(function() {
     
   });
 
+  //Gets tweets from database to be able to display on page
   const loadTweets = () => {
     $.ajax({
       method: 'GET',
