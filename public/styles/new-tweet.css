@@ -64,13 +64,14 @@ article > header > div > div > img {
 }
 
 article > p {
+  overflow-wrap: break-word;
   align-self: center;
   width: 95%;
   height: 2.5em;
   padding-left: 1em;
   border-style: solid;
   border-width: 0 0 4px 0;
-  margin-bottom: 0;
+  margin-bottom: 0.;
 }
 
 article > footer {
