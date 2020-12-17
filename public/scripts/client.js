@@ -66,5 +66,11 @@ $(document).ready(function() {
     });
   };
 
+  //Prevent submit from redirecting to /tweet  which has no POST & generates a 400 error
+  $('#tweet-form').on('submit', function(event) {
+    event.preventDefault();
+    console.log($(this).serialize());
+  });
+
   renderTweets(data);
 });
