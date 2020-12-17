@@ -58,6 +58,7 @@ article > header > div {
 }
 
 article > header > div > img {
+  margin-right: 0.5em;
   width: 70px;
   height: 60px;
 }
