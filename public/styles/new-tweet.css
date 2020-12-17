@@ -57,7 +57,7 @@ article > header > div {
   align-items: center;
 }
 
-article > header > div > img {
+article > header > div > div > img {
   margin-right: 0.5em;
   width: 70px;
   height: 60px;
@@ -115,8 +115,11 @@ article > footer {
   height: 0.7em;
 }
 
+#tweets-container {
+  margin-bottom: 1em;
+}
 
-.tweet-container:hover{
+.tweet-containers:hover{
   box-shadow: 10px 6px 2px 0px #ccc;
   font-weight: bold;
 }
@@ -125,7 +128,7 @@ article > footer {
   visibility: hidden;
 }
 
-.tweet-container:hover .handle {
+.tweet-containers:hover .handle {
   visibility: visible;
   font-weight: normal;
 }

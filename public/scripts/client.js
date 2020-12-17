@@ -33,7 +33,7 @@ $(document).ready(function() {
 // Returns object to append to html
   const createTweetElement = function(tweet) {
     const $tweet = $(`
-<article>
+<article class="tweet-containers">
   <header>
     <div>
       <div>
@@ -65,12 +65,6 @@ $(document).ready(function() {
       $('#tweets-container').prepend($newTweet);
     });
   };
-
-// $(document).ready(function() {
-//   $(document).on('dblclick', function(event) {
-//     $('#tweets-container').append(createTweetElement(tweetData)[0]);
-//   });
-// });
 
   renderTweets(data);
 });
