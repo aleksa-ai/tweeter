@@ -48,7 +48,6 @@ $(document).ready(function() {
     event.preventDefault();
     
     const charLeft = 140 - $("#tweet-form textarea").val().length;
-    console.log(charLeft);
 
     const data = $(this).serialize();
 
@@ -66,6 +65,7 @@ $(document).ready(function() {
       })
         .then(function(data) {
           $('#tweets-container').prepend(data);
+          loadTweets();
         })
         .catch(error => console.log(error));
     }
