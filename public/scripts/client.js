@@ -50,10 +50,8 @@ const $tweet = createTweetElement(tweetData);
 
 $(document).ready(function() {
   $(document).on('dblclick', function (event) {
-    //console.log(console.log($tweet)); Template from assignment instructions
-    console.log(createTweetElement(tweetData)[0]); // To print in console
+    //console.log(createTweetElement(tweetData)[0]); // To print in console
+    //$('#tweets-container').append($tweet); // Template from assignment instructions
+    $('#tweets-container').append(createTweetElement(tweetData)[0]); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
   });
 });
-
-// (temporary)
-//$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
