@@ -1,3 +1,14 @@
+.error-message {
+  border-style: solid;
+  border-color: red;
+  border-width: 4px;
+  margin-top: 1em;
+  padding: 0.5em 0;
+  color: red;
+  text-align: center;
+  display: none;
+}
+
 form {
   display: flex;
   flex-direction: column;

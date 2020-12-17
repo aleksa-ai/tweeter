@@ -62,11 +62,9 @@ $(document).ready(function() {
     const errorMessage = $(this).parent().siblings('#error-message');
 
     if (charLeft === 140) {
-      errorMessage.text('Your tweet is empty.')
-      errorMessage.slideDown('fast');
+      errorMessage.text('❗ Your tweet is empty. ❗').slideDown('fast');
     } else if (charLeft < 0) {
-      errorMessage.text('Your tweet exceeds the character limit.')
-      errorMessage.slideDown('fast');
+      errorMessage.text('❗ Your tweet exceeds the character limit. ❗').slideDown('fast');
     } else {
 
       //Send tweets to database
