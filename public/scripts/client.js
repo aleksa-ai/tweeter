@@ -30,7 +30,8 @@ $(document).ready(function() {
       "created_at": 1461113959088
     }
   ];
-// Returns object to append to html
+
+  // Returns object to append to html
   const createTweetElement = function(tweet) {
     const $tweet = $(`
 <article class="tweet-containers">
@@ -70,7 +71,19 @@ $(document).ready(function() {
   $('#tweet-form').on('submit', function(event) {
     event.preventDefault();
     console.log($(this).serialize());
-  });
 
+    $.ajax({
+      method: 'POST',
+      url: '/tweets',
+      data: $(this).serialize()
+    })
+      .then(function(data) {
+        $('#tweets-container').prepend(data);
+      })
+      .catch(error => console.log(error));
+
+  });
+  
+  //start the app showing the tweets
   renderTweets(data);
 });
