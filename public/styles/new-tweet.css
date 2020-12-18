@@ -116,6 +116,7 @@ article > footer {
   display: flex;
   justify-content: space-between;
   width: 75px;
+  visibility: hidden;
 }
 
 .flag {
@@ -154,4 +155,8 @@ article > footer {
 .tweet-containers:hover .handle {
   visibility: visible;
   font-weight: normal;
+}
+
+.tweet-containers:hover .engagement {
+  visibility: visible;
 }
