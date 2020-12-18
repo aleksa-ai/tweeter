@@ -36,7 +36,7 @@ form {
   background-color: #f4f1ec;
   border-width: 0 0 4px 0;
   margin-bottom: 0.7em;
-  height: 1.7em;
+  height: auto;
   resize: none;
   outline: none;
   font-size: 28px;
@@ -72,6 +72,8 @@ article {
   margin-top: 3em;
   border-style: solid;
   border-width: 4px;
+  margin: 0 0 2em;
+
 }
 
 article > header {
@@ -90,17 +92,15 @@ article > p {
   overflow-wrap: break-word;
   align-self: center;
   width: 95%;
-  height: 3.5em;
-  padding-left: 1em;
+  height: auto;
+  padding: 0 1em 1.2em;
   border-style: solid;
   border-width: 0 0 4px 0;
-  margin-bottom: 0.;
+  margin-bottom: 0;
 }
 
 article > img {
   margin-right: 0.5em;
-  width: 70px;
-  height: 60px;
 }
 
 article > footer {
@@ -143,10 +143,6 @@ article > footer {
   background-repeat: no-repeat;
   width: 0.7em;
   height: 0.7em;
-}
-
-#tweets-container {
-  margin-bottom: 1em;
 }
 
 .tweet-containers:hover{

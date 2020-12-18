@@ -95,6 +95,16 @@ $(document).ready(function() {
       
       .fail((error) => console.log(error));
   };
+
+  $('#toggle-header').on('click', function(event) {
+    const tweetForm = $(this)
+      .parent()
+      .parent()
+      .siblings('.container')
+      .children('.new-tweet');
+    tweetForm.slideToggle('fast');
+  });
+
   //Load the tweets
   loadTweets();
 });

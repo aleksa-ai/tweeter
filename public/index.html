@@ -31,7 +31,7 @@
     <nav>
       <span id="title">tweeter</span>
       <div id="sub-title">
-        <div><strong>Write</strong> a new tweet</div>
+        <div id="toggle-header"><strong>Write</strong> a new tweet</div>
       </div>
     </nav>
 
@@ -53,10 +53,9 @@
     <main class="container">
       <span class="error-message"></span>
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
         <form id="tweet-form" action="/tweets" method="POST">
-          <!-- <label for="tweet-text"></label> -->
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
           <div id = "button-and-counter">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
