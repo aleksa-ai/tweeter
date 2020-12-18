@@ -43,12 +43,12 @@ body {
 
   body {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   
   .header-container {
     margin-top: 150px;
-    flex-basis: 40%;
+    flex-basis: 30%;
   }
 
   #user-header {
@@ -59,7 +59,7 @@ body {
 
   .container {
     margin-top: 150px;
-    flex-basis: 50%;
+    flex-basis: 60%;
     padding-left: 3%;
     width: 100%;
   }
