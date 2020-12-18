@@ -107,6 +107,7 @@ $(document).ready(function() {
     $('.error-message').hide()
   });
 
+  autosize($("#tweet-text"));
   //Load the tweets
   loadTweets();
 });
