@@ -1,3 +1,12 @@
+.header-main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  align-self: center;
+}
+
 .error-message {
   border-style: solid;
   border-color: red;
@@ -8,10 +17,19 @@
   text-align: center;
   display: none;
 }
+.new-tweet {
+  display: none;
+  margin-bottom: 2em;
+}
 
 form {
   display: flex;
   flex-direction: column;
+}
+
+#tweet-form > label {
+  font-size: 28px;
+  font-weight: bold;
 }
 
 #tweet-text {
@@ -21,7 +39,7 @@ form {
   height: 1.7em;
   resize: none;
   outline: none;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -68,12 +86,6 @@ article > header > div {
   align-items: center;
 }
 
-article > header > div > div > img {
-  margin-right: 0.5em;
-  width: 70px;
-  height: 60px;
-}
-
 article > p {
   overflow-wrap: break-word;
   align-self: center;
@@ -83,6 +95,12 @@ article > p {
   border-style: solid;
   border-width: 0 0 4px 0;
   margin-bottom: 0.;
+}
+
+article > img {
+  margin-right: 0.5em;
+  width: 70px;
+  height: 60px;
 }
 
 article > footer {

@@ -31,3 +31,37 @@ body {
  main {
   width: 90%;
 }
+
+ /* Desktop styles */
+ @media only screen and (min-width: 1024px) {
+  nav {
+    position: fixed;
+    top: 0;
+    background-image: none;
+    background-color: #4056A1;
+  }
+
+  .header-main-container {
+    margin-top: calc(120px + 5vw);
+    display: flex;
+    flex-direction: row;
+    width: 90%
+  }
+  
+  .header-container {
+    flex-basis: 40%;
+    margin: 0 7% 0 0;
+  }
+
+  #user-header {
+    margin: 120px 0 2.2rem;
+    position: fixed;
+    width: 37%;
+    margin: 0 0 0 0;
+  }
+
+  .container {
+    flex-basis: 60%;
+    padding-left: 3%;
+  }
+} 
