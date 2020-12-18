@@ -75,6 +75,7 @@ $(document).ready(function() {
       })
         .then(function(data) {
           $('#tweets-container').prepend(data);
+          $('#tweets-container').empty();
           loadTweets();
         })
         .catch(error => console.log(error));
@@ -103,6 +104,7 @@ $(document).ready(function() {
       .siblings('.container')
       .children('.new-tweet');
     tweetForm.slideToggle('fast');
+    $('.error-message').hide()
   });
 
   //Load the tweets

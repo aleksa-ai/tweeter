@@ -1,10 +1,7 @@
-.header-main-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .container{
+  margin-top: 30px;
   align-self: center;
+  
 }
 
 .error-message {
@@ -36,7 +33,7 @@ form {
   background-color: #f4f1ec;
   border-width: 0 0 4px 0;
   margin-bottom: 0.7em;
-  height: auto;
+  height: 2rem;
   resize: none;
   outline: none;
   font-size: 28px;

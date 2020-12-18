@@ -17,7 +17,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  justify-content: space-between;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
@@ -35,33 +36,31 @@ body {
  /* Desktop styles */
  @media only screen and (min-width: 1024px) {
   nav {
-    position: fixed;
     top: 0;
     background-image: none;
     background-color: #4056A1;
   }
 
-  .header-main-container {
-    margin-top: calc(120px + 5vw);
-    display: flex;
+  body {
     flex-direction: row;
-    width: 90%
+    justify-content: space-around;
   }
   
   .header-container {
+    margin-top: 150px;
     flex-basis: 40%;
-    margin: 0 7% 0 0;
   }
 
   #user-header {
     margin: 120px 0 2.2rem;
-    position: fixed;
-    width: 37%;
+    width: 100%;
     margin: 0 0 0 0;
   }
 
   .container {
-    flex-basis: 60%;
+    margin-top: 150px;
+    flex-basis: 50%;
     padding-left: 3%;
+    width: 100%;
   }
 } 
