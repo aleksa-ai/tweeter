@@ -12,7 +12,7 @@ $(document).ready(function() {
   };
 
 
-  // Returns object to append to html
+  // Returns new markup with tweet data for dynamic intro into the DOM
   const createTweetElement = function(tweet) {
     const $tweet = $(`
       <article class="tweet-containers">
