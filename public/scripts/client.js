@@ -29,7 +29,7 @@ $(document).ready(function() {
           ${escape(tweet.content.text)}
         </p>
         <footer>
-          <span class="tweet-age">${tweet.created_at} days ago</span>
+          <span class="tweet-age">${new Date(tweet.created_at).toDateString()}</span>
           <div class="engagement">
             <div class="flag"></div>
             <div class="retweet"></div>
