@@ -13,7 +13,9 @@ Additional features include:
 
 ## Final Product
 
-!["Screeshot description"](URL)
+!["Writing Tweet in Mobile - Screeshot"](https://github.com/aleksa-ai/tweeter/blob/master/public/images/Tweeter%20Screenshot%201.png)
+!["Submitted Tweet - Screeshot"](https://github.com/aleksa-ai/tweeter/blob/master/public/images/Tweeter%20Screenshot%202.png)
+!["Character Limit Exceeded in Desktop - Screeshot"](Uhttps://github.com/aleksa-ai/tweeter/blob/master/public/images/Tweeter%20Screenshot%203.pngRL)
 
 ## Dependencies
 
